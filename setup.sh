@@ -50,7 +50,6 @@ sudo nano /etc/environment
 
 #add this line to the end 
 # JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
-
 source /etc/environment
 echo $JAVA_HOME
 

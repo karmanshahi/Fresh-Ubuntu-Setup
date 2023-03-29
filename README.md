@@ -22,7 +22,7 @@ sudo swapon /swapfile
 sudo swapon --show
 ```
 
-3. add needed packages
+3. add system packages
     - AnyConnect:
     
     ```bash
@@ -151,7 +151,7 @@ sudo swapon --show
     sudo apt install ffmpeg obs-studio
     ```
     
-    - Matlab
+    -- Matlab [link](https://medium.com/@lh.long/install-matlab-r2018b-on-ubuntu-9d00062a4911)
     - **android-file-transfer-linux**
     
     ```bash
@@ -184,74 +184,72 @@ sudo swapon --show
     cmd/ctrl+s ...this does nothing.
     ```
     
-    6. Install Extra packages:
-        - git
-        
-        ```bash
-        sudo apt install git
-        ```
-        
-        - curl
-        
-        ```bash
-        sudo apt install curl
-        ```
-        
-        - rar
-        
-        ```bash
-        sudo apt install rar
-        ```
-        
-        - zip
-        
-        ```bash
-        sudo apt install zip
-        ```
-        
-        - JAVA  [link](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-do-I-install-Java-on-Ubuntu)
-        
-        ```jsx
-        sudo apt-get update
-        sudo apt install default-jdk
-        java -version
-        update-alternatives --config java
-        sudo nano /etc/environment
-        source /etc/environment
-        echo $JAVA_HOME
-        ```
-        
-        - SSH for github [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-        
-        
-- Chrome horizontal YouTube lines
+6. Install Extra packages:
+    - git    
+    ```bash
+    sudo apt install git
+    ```
 
- 
+    - curl        
+    ```bash
+    sudo apt install curl
+    ```    
+    - rar
+        
+    ```bash
+    sudo apt install rar
+    ```    
+    - zip    
+    ```bash
+    sudo apt install zip
+    ```
+        
+    - JAVA  [link](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-do-I-install-Java-on-Ubuntu)    
+    ```bash
+    sudo apt-get update
+    sudo apt install default-jdk
+    java -version
 
-```jsx
-chrome://settings/?search=hardware
-```
+    #configaring java home location
+    update-alternatives --config java
+    sudo nano /etc/environment
 
-- keyboard shortcuts:
-    
+    #add this line to the end 
+    # JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin/java"
+
+    source /etc/environment
+    echo $JAVA_HOME
+    ```
+        
+    - SSH for github [link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+        
+
+
+7. Extra settings:
+
+    - Chrome horizontal YouTube lines
+
+    ```jsx
+    chrome://settings/?search=hardware
+    ```
+
+    - keyboard shortcuts:   
     USB: sh -c "udisksctl unmount -b /dev/sdb1; udisksctl power-off -b /dev/sdb"
-    
+        
     suspend: systemctl suspend
+        
+    - Create system ISO [link](https://itslinuxfoss.com/how-to-create-an-iso-from-current-installation-in-ubuntu-22-04/)
     
-- Create system ISO [link](https://itslinuxfoss.com/how-to-create-an-iso-from-current-installation-in-ubuntu-22-04/)
-
-```bash
-cd Documents
-mkdir BackupFolder
-cd BackupFolder
-mkisofs -o ubuntu22.iso ~
-
-```
-
-- Arrange App Menu
-
-```bash
-gsettings set org.gnome.shell app-picker-layout "[]"
-
-// then logout
-```
+    ```bash
+    cd Documents
+    mkdir BackupFolder
+    cd BackupFolder
+    mkisofs -o ubuntu22.iso ~
+    ```
+    
+    - Arrange App Menu
+    ```bash
+    gsettings set org.gnome.shell app-picker-layout "[]"
+    
+    // then logout
+    ```
