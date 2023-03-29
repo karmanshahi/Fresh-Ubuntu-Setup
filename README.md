@@ -151,7 +151,7 @@ sudo swapon --show
     sudo apt install ffmpeg obs-studio
     ```
     
-    -- Matlab [link](https://medium.com/@lh.long/install-matlab-r2018b-on-ubuntu-9d00062a4911)
+    - Matlab [link](https://medium.com/@lh.long/install-matlab-r2018b-on-ubuntu-9d00062a4911)
     - **android-file-transfer-linux**
     
     ```bash
@@ -161,28 +161,6 @@ sudo swapon --show
     - **Mailspring [link](https://updates.getmailspring.com/download?platform=linuxDeb)**
     - **FromScratch**  [link](https://github.com/Kilian/fromscratch/releases/download/v1.4.3/FromScratch_1.4.3_amd64.deb)
     
-    ```bash
-    #shortcuts
-    
-    f1 open shortcut overview
-    cmd/ctrl+up move current line up
-    cmd/ctrl+down move current line down
-    cmd/ctrl+d delete current line
-    cmd/ctrl+w/q close application
-    cmd/ctrl +/= zoom text in
-    cmd/ctrl - zoom text out
-    cmd/ctrl+0 reset text size
-    cmd/ctrl+]/[ fold note collapsing
-    cmd/ctrl+f search (you can also use regular expressions, by starting and ending with a /)
-    shift+cmd/ctrl+f replace
-    shift+cmd/ctrl+r replace all
-    cmd/ctrl+g jump to line (you can also use <line>:<character> notation, or go relative lines with +<line> and -<line>)
-    cmd/ctrl+/ Add or toggle a checkbox
-    f11 Toggle fullscreen
-    cmd/ctrl+i Toggle between light and dark theme
-    alt show or hide menu (Windows only)
-    cmd/ctrl+s ...this does nothing.
-    ```
     
 6. Install Extra packages:
     - git    
