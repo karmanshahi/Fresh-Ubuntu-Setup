@@ -236,7 +236,7 @@ sudo swapon --show
     - keyboard shortcuts:   
     USB: sh -c "udisksctl unmount -b /dev/sdb1; udisksctl power-off -b /dev/sdb"
         
-    suspend: systemctl suspend
+    - suspend: systemctl suspend
         
     - Create system ISO [link](https://itslinuxfoss.com/how-to-create-an-iso-from-current-installation-in-ubuntu-22-04/)
     
