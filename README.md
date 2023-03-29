@@ -1,5 +1,7 @@
-# Fresh-Ubuntu-Install-
-all what i need after fresh ubuntu install 
+# Fresh-Ubuntu-Setup
+
+this is my Ubuntu enviroment as a Android Developer with the applicaions
+that I personaly need in my every day usage 
 
 1. update the system
 
